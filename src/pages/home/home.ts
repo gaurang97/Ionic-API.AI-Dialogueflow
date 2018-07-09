@@ -2,7 +2,7 @@ import { Component, NgZone } from '@angular/core';
 
 import { Platform, NavController } from 'ionic-angular';
 import {ApiAiClient} from "api-ai-javascript";
-const client = new ApiAiClient({accessToken: '75b05e7e522548ecb9d52428522944fe'})
+const client = new ApiAiClient({accessToken: '<YOUR CLIENT ACCESS TOKEN>'})
 @Component({
   selector: 'page-home',
   templateUrl: 'home.html'

@@ -1,14 +1,26 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Ionic Blank
+      Bhamashah API.AI Chatbot
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+
+  
+
+  
+
+  <div>
+    {{answer}}
+  </div>
+
 </ion-content>
+<ion-footer>
+  <ion-toolbar position="bottom">
+      
+      <input type="text" placeholder="Type a message..." [(ngModel)]="question">
+      <button type="submit"  (click)="ask(question)">Send <ion-icon name="send"></ion-icon></button>
+  </ion-toolbar>
+</ion-footer>
